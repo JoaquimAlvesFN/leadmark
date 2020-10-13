@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { View, Text, StatusBar } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
 import { Container, Input, Button, Link, Logo, TextLink, TextButton, Footer } from './styles';
 
@@ -7,7 +8,13 @@ import logoImage from '../../assets/logo.png';
 
 const Login: React.FC = () => {
     const [email, setEmail] = useState('');
-    const [senha, setSenha] = useState('');
+    const [password, setPassword] = useState('');
+
+    const navigation = useNavigation();
+
+    const handleLogin = () => {
+        navigation.navigate('Home');
+    }
 
     return (
         <>
@@ -25,12 +32,12 @@ const Login: React.FC = () => {
                 <Input 
                     secureTextEntry 
                     placeholder="Senha" 
-                    value={senha} 
+                    value={password} 
                     onChangeText={(text) => {
-                        setSenha(text)
+                        setPassword(text)
                     }} 
                 />
-                <Button>
+                <Button onPress={handleLogin}>
                     <TextButton>Entrar</TextButton>
                 </Button>
             </View>

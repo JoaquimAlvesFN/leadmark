@@ -27,6 +27,7 @@ export const Button = styled.TouchableOpacity({
     borderRadius: 25,
     marginTop: 20,
     fontWeight: 'bold',
+    width: widthDimension - 50,
 });
 
 export const TextButton = styled.Text({
