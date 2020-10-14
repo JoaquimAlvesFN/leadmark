@@ -51,5 +51,6 @@ export const Footer = styled.View({
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'space-evenly'
+    alignContent: 'stretch',
+    justifyContent: 'space-between'
 });

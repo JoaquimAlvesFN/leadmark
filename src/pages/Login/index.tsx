@@ -14,6 +14,9 @@ const Login: React.FC = () => {
 
     const handleLogin = () => {
         navigation.navigate('Home');
+
+        setEmail('');
+        setPassword('');
     }
 
     return (
@@ -23,6 +26,8 @@ const Login: React.FC = () => {
             <Logo source={logoImage} resizeMode="center" />
             <View>
                 <Input 
+                    autoCapitalize="none"
+                    autoCorrect={false}
                     placeholder="Email" 
                     value={email} 
                     onChangeText={(text) => {
