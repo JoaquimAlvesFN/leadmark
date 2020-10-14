@@ -1,6 +1,6 @@
 # Instruções para rodar o projeto
 
-1 . Clone o projeto com o comando: 
+1 . Clone o projeto com o comando: `git clone https://github.com/JoaquimAlvesFN/leadmark.git`
 
 2. Instale as dependencias com `npm install` ou `yarn`
 
