@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text } from 'react-native';
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 import { Container, LogoImg } from './styles';
 
@@ -12,7 +13,7 @@ const Header: React.FC = () => {
           <LogoImg source={logoImage} resizeMode="center" />
         </View>
         <View>
-          <Text>Teste</Text>
+          <Icon name="bars" size={30} />
         </View>
     </Container>
   );
